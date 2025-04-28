@@ -1,0 +1,15 @@
+C:\Users\Alumno\Desktop\tp6\tl1-tp6-2025-fran-tn\bin\Debug\net8.0\tl1-tp6-2025-fran-tn.exe
+C:\Users\Alumno\Desktop\tp6\tl1-tp6-2025-fran-tn\bin\Debug\net8.0\tl1-tp6-2025-fran-tn.deps.json
+C:\Users\Alumno\Desktop\tp6\tl1-tp6-2025-fran-tn\bin\Debug\net8.0\tl1-tp6-2025-fran-tn.runtimeconfig.json
+C:\Users\Alumno\Desktop\tp6\tl1-tp6-2025-fran-tn\bin\Debug\net8.0\tl1-tp6-2025-fran-tn.dll
+C:\Users\Alumno\Desktop\tp6\tl1-tp6-2025-fran-tn\bin\Debug\net8.0\tl1-tp6-2025-fran-tn.pdb
+C:\Users\Alumno\Desktop\tp6\tl1-tp6-2025-fran-tn\obj\Debug\net8.0\tl1-tp6-2025-fran-tn.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alumno\Desktop\tp6\tl1-tp6-2025-fran-tn\obj\Debug\net8.0\tl1-tp6-2025-fran-tn.AssemblyInfoInputs.cache
+C:\Users\Alumno\Desktop\tp6\tl1-tp6-2025-fran-tn\obj\Debug\net8.0\tl1-tp6-2025-fran-tn.AssemblyInfo.cs
+C:\Users\Alumno\Desktop\tp6\tl1-tp6-2025-fran-tn\obj\Debug\net8.0\tl1-tp6-2025-fran-tn.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\Desktop\tp6\tl1-tp6-2025-fran-tn\obj\Debug\net8.0\tl1-tp6-2025-fran-tn.sourcelink.json
+C:\Users\Alumno\Desktop\tp6\tl1-tp6-2025-fran-tn\obj\Debug\net8.0\tl1-tp6-2025-fran-tn.dll
+C:\Users\Alumno\Desktop\tp6\tl1-tp6-2025-fran-tn\obj\Debug\net8.0\refint\tl1-tp6-2025-fran-tn.dll
+C:\Users\Alumno\Desktop\tp6\tl1-tp6-2025-fran-tn\obj\Debug\net8.0\tl1-tp6-2025-fran-tn.pdb
+C:\Users\Alumno\Desktop\tp6\tl1-tp6-2025-fran-tn\obj\Debug\net8.0\tl1-tp6-2025-fran-tn.genruntimeconfig.cache
+C:\Users\Alumno\Desktop\tp6\tl1-tp6-2025-fran-tn\obj\Debug\net8.0\ref\tl1-tp6-2025-fran-tn.dll

@@ -5,7 +5,7 @@ int b;
 a= 10;
 b =a;
 Console.WriteLine("Valor de a: " +a);
-Console.WriteLine("Valor de b: " +b);
+Console.WriteLine("Valor de b: " +b); 
 
 
 Console.WriteLine("~~~~~~~~~Ejercicio 1~~~~~~~~~~~~~~~");
@@ -107,4 +107,105 @@ while (iterar != 0)
         int.TryParse(auxiliar, out iterar);
     }
 
+}
+
+Console.WriteLine("~~~~~~~+Ejercicio 3~~~~~~~+");
+Console.WriteLine("Ingrese un numero");
+auxiliar = Console.ReadLine();
+int comparar1, comparar2;
+double num3, resultadoEjercicio3;
+if (double.TryParse(auxiliar, out num3))
+{
+    double.TryParse(auxiliar, out num3);
+    Console.WriteLine("Seleccione la operacion:");
+    Console.WriteLine("1)Valor absoluto");
+    Console.WriteLine("2)Cuadrado de " + num3);
+    if (num3 >= 0)
+    {
+        Console.WriteLine("3)Raiz cuadrada de " + num3);
+    }
+    Console.WriteLine("4)Seno (radianes) de " + num3);
+    Console.WriteLine("5)Coseno (radianes) de " + num3);
+    Console.WriteLine("6)Parte entera de " + num3);
+    auxiliar = Console.ReadLine();
+    int.TryParse(auxiliar, out operacion);
+
+    while (operacion < 1 || operacion > 6)
+    {
+        Console.WriteLine("Seleccione la operacion:");
+        Console.WriteLine("1)Valor absoluto");
+        Console.WriteLine("2)Cuadrado de " + num3);
+        Console.WriteLine("3)Raiz cuadrada de " + num3);
+        Console.WriteLine("4)Seno de " + num3);
+        Console.WriteLine("5)Coseno de " + num3);
+        Console.WriteLine("6)Parte entera de " + num3);
+        auxiliar = Console.ReadLine();
+        int.TryParse(auxiliar, out operacion);
+    }
+
+    switch (operacion)
+    {
+        case 1:
+            resultadoEjercicio3 = Math.Abs(num3);
+            break;
+        case 2:
+            resultadoEjercicio3 = num3 * num3;
+            break;
+        case 3:
+            resultadoEjercicio3 = Math.Sqrt(num3);
+            break;
+        case 4:
+            resultadoEjercicio3 = Math.Sin(num3);
+            break;
+        case 5:
+            resultadoEjercicio3 = Math.Cos(num3);
+            break;
+        default:
+            resultadoEjercicio3 = Math.Truncate(num3);
+            break;
+    }
+
+    Console.WriteLine("El resultado es: " + resultadoEjercicio3);
+}
+else
+{
+    Console.WriteLine("Entrada incorrecta");
+}
+
+Console.WriteLine("Ingrese un numero");
+auxiliar = Console.ReadLine();
+if (int.TryParse(auxiliar, out comparar1))
+{
+    int.TryParse(auxiliar, out comparar1);
+    Console.WriteLine("Ingrese un segundo numero");
+    auxiliar = Console.ReadLine();
+    if (int.TryParse(auxiliar, out comparar2))
+    {
+        int.TryParse(auxiliar, out comparar2);
+        if (comparar1 > comparar2)
+        {
+            Console.WriteLine("Numero Mayor: " + comparar1);
+            Console.WriteLine("Numero Menor: " + comparar2);
+        }
+        else
+        {
+            if (comparar1 == comparar2)
+            {
+                Console.WriteLine("Los numeros son iguales");
+            }
+            else
+            {
+                Console.WriteLine("Numero Mayor: " + comparar2);
+                Console.WriteLine("Numero Menor: " + comparar1);
+            }
+        }
+    }
+    else
+    {
+        Console.WriteLine("Entrada incorrecta");
+    }
+}
+else
+{
+    Console.WriteLine("Entrada incorrecta");
 }

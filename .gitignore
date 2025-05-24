@@ -73,6 +73,15 @@ ScaffoldingReadMe.txt
 StyleCopReport.xml
 
 # Files built by Visual Studio
+.vs/
+
+*.suo
+
+*.user
+
+*.log
+
+*.cache
 *_i.c
 *_p.c
 *_h.h
@@ -411,5 +420,11 @@ FodyWeavers.xsd
 # Ignore all local history of files
 .history
 .ionide
+
+# Directorios de compilación de .NET
+
+[Bb]in/
+
+[Oo]bj/
 
 # End of https://www.toptal.com/developers/gitignore/api/csharp,visualstudiocode

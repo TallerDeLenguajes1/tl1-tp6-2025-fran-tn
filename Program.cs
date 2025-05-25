@@ -315,3 +315,11 @@ Console.WriteLine("Cadena transformada en mayusculas: " + cadenaTransformada);
 
 cadenaTransformada = cadena2.ToLower();
 Console.WriteLine("Cadena transformada en minusculas: " + cadenaTransformada);
+
+string[] palabraSeparada = cadena2.Split(' '); //Separa la cadena2 en subcadenas que terminan en un espacio
+contador = 0;
+foreach (string mostrar in palabraSeparada) //Recorre cada subcadena
+{
+    contador++;
+    Console.WriteLine($"Subcadena {contador}: " + mostrar);
+}

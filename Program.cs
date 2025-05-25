@@ -286,3 +286,10 @@ Console.WriteLine("Seleccione la operacion que va a realizar:");
             }
 
     }
+
+int contador = 0;
+foreach (char elemento in cadena2)
+{
+    Console.WriteLine($"Elemento en posicion {contador}: " + elemento);
+    contador++;
+}

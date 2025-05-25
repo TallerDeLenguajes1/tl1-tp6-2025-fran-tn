@@ -307,3 +307,11 @@ else
 {
     Console.WriteLine("La palabra no se encuentra en la cadena");
 }
+
+string cadenaTransformada;
+
+cadenaTransformada  = cadena2.ToUpper();
+Console.WriteLine("Cadena transformada en mayusculas: " + cadenaTransformada);
+
+cadenaTransformada = cadena2.ToLower();
+Console.WriteLine("Cadena transformada en minusculas: " + cadenaTransformada);

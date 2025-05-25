@@ -293,3 +293,17 @@ foreach (char elemento in cadena2)
     Console.WriteLine($"Elemento en posicion {contador}: " + elemento);
     contador++;
 }
+
+
+
+Console.WriteLine("Ingrese la palabra que desea buscar en la cadena que ingreso anteriormente");
+string buscar = Console.ReadLine();
+
+if (cadena2.Contains(buscar))
+{
+    Console.WriteLine("La palabra se encuentra en la cadena");
+}
+else
+{
+    Console.WriteLine("La palabra no se encuentra en la cadena");
+}

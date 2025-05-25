@@ -212,11 +212,14 @@ else
 
 Console.WriteLine("~~~~~~~~~~Ejercicio 4~~~~~~~~~~~~");
 
-string cadena = "Texto de ejmeplo";
+string cadena = "Texto de ejmeplo ";
 int longitud = cadena.Length;
 Console.WriteLine("Longitud de la primera cadena: " + longitud);
 
-
+Console.WriteLine("Ingrese una cadena de caracteres");
+string cadena2 = Console.ReadLine();
+string concatenacion = $"{cadena}{cadena2}";
+Console.WriteLine("Cadena concatenada: " + concatenacion);
 
 
 

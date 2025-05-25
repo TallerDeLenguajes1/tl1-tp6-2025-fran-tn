@@ -209,3 +209,14 @@ else
 {
     Console.WriteLine("Entrada incorrecta");
 }
+
+Console.WriteLine("~~~~~~~~~~Ejercicio 4~~~~~~~~~~~~");
+
+string cadena = "Texto de ejmeplo";
+int longitud = cadena.Length;
+Console.WriteLine("Longitud de la primera cadena: " + longitud);
+
+
+
+
+

@@ -221,5 +221,9 @@ string cadena2 = Console.ReadLine();
 string concatenacion = $"{cadena}{cadena2}";
 Console.WriteLine("Cadena concatenada: " + concatenacion);
 
-
+if (cadena2.Length > 5)
+{
+    string extraer = cadena2.Substring(5); //Extraera desde la posicion 5 en adelante 
+    Console.WriteLine("Cadena extraida: " + extraer);
+}
 

@@ -227,3 +227,62 @@ if (cadena2.Length > 5)
     Console.WriteLine("Cadena extraida: " + extraer);
 }
 
+
+Console.WriteLine("Seleccione la operacion que va a realizar:");
+    Console.WriteLine("1)SUMA");
+    Console.WriteLine("2)RESTA");
+    Console.WriteLine("3)PRODUCTO");
+    Console.WriteLine("4)DIVISION");
+    auxiliar = Console.ReadLine();
+    if (int.TryParse(auxiliar, out operacion))
+    {
+        while (operacion < 1 || operacion > 4)
+        {
+            Console.WriteLine("Seleccione la operacion que va a realizar:");
+            Console.WriteLine("1)SUMA");
+            Console.WriteLine("2)RESTA");
+            Console.WriteLine("3)PRODUCTO");
+            Console.WriteLine("4)DIVISION");
+            auxiliar = Console.ReadLine();
+            int.TryParse(auxiliar, out operacion);
+        }
+
+        Console.WriteLine("Ingrese el numero 1");
+        auxiliar = Console.ReadLine();
+        int.TryParse(auxiliar, out num1);
+
+        Console.WriteLine("Ingrese el numero 2");
+        auxiliar = Console.ReadLine();
+        int.TryParse(auxiliar, out num2);
+
+            switch (operacion)
+            {
+                case 1:
+                    resultado = num1 + num2;
+                    Console.WriteLine($"La suma de {num1} y {num2} es: " + resultado.ToString());
+                    break;
+
+                case 2:
+                    resultado = num1 - num2;
+                    Console.WriteLine($"La resta de  {num1} y {num2} es: " + resultado.ToString());
+                    break;
+
+                case 3:
+                    resultado = num1 * num2;
+                    Console.WriteLine($"El producto de {num1} y {num2} es: " + resultado.ToString());
+                    break;
+
+                default:
+                    if (num2 != 0)
+                    {
+                        resultado = num1 / num2;
+                        Console.WriteLine($"El cociente entre {num1} y {num2} es: " + resultado.ToString());
+                    }
+                    else
+                    {
+                        Console.WriteLine("No se puede dividir por 0");
+                    }
+                    break;
+            }
+
+    }

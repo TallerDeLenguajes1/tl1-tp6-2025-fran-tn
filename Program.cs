@@ -301,11 +301,11 @@ string buscar = Console.ReadLine();
 
 if (cadena2.Contains(buscar))
 {
-    Console.WriteLine("La palabra se encuentra en la cadena");
+    Console.WriteLine("La palabra SI se encuentra en la cadena");
 }
 else
 {
-    Console.WriteLine("La palabra no se encuentra en la cadena");
+    Console.WriteLine("La palabra NO se encuentra en la cadena");
 }
 
 string cadenaTransformada;
@@ -322,4 +322,62 @@ foreach (string mostrar in palabraSeparada) //Recorre cada subcadena
 {
     contador++;
     Console.WriteLine($"Subcadena {contador}: " + mostrar);
+}
+
+Console.WriteLine("Ingrese una ecuacion");
+string ecuacion = Console.ReadLine();               //RECIBO LA CADENA DE CARACTERES
+int operar1 = 0, operar2 = 0, signo = 0, aux;       //INICIALIZO CONTADORES
+string signoDeOperacion = "x";                      //SE GUARDARA EL SIGNO DE LA OPERACION ARITMETICA
+string cadenaAuxiliar;                              //SE UTILIZARA PARA PODER UTILIZAR TryParse
+foreach (char digito in ecuacion)                   //RECORRERA CADA CARACTER DE LA CADENA DE CARACTERES, TRABAJARE CON TIPO char
+{
+    cadenaAuxiliar = digito.ToString();             //PASO EL char A string para poder utilizar TryParse
+    
+        if (int.TryParse(cadenaAuxiliar, out aux) && signo == 0)  //VEO SI EL DIGITO SE PUEDE PASAR A ENTERO
+        {
+            int.TryParse(cadenaAuxiliar, out aux);  //PASO EL DIGITO DE string A int
+            operar1 = (operar1 * 10) + aux;         //MULTIPLICO POR 10 PARA QUE SE SUME EL NUEVO DIGITO COMO UNIDAD
+        }
+        else
+        {
+            if (signo != 1)
+            {
+                signo = 1;                              //SI NO SE PUEDE PASAR EL DIGITO A ENTERO, INDICO QUE YA SE LEYO EL PRIMER NUMERO DE LA ECUACION
+                signoDeOperacion = cadenaAuxiliar;      //GUARDO EL SIGNO QUE INDICA LA OPERACION QUE SE DEBE REALIZAR
+            }
+                        
+        }
+    
+
+        if (int.TryParse(cadenaAuxiliar, out aux) && signo == 1) //COMO SE LLEGO AL FINAL DEL PRIMER NUMERO, COMIENZO A AGREGAR EL VALOR DEL SEGUNDO NUMERO
+        {
+            int.TryParse(cadenaAuxiliar, out aux);
+            operar2 = (operar2 * 10) + aux;
+        }
+}
+
+switch (signoDeOperacion)
+{
+    case "+":
+        Console.WriteLine($"La suma entre {operar1} y {operar2} es: {operar1 + operar2}");
+        break;
+    case "-":
+        Console.WriteLine($"La resta entre {operar1} y {operar2} es: {operar1 - operar2}");
+        break;
+    case "*":
+        Console.WriteLine($"El producto entre {operar1} y {operar2} es: {operar1 * operar2}");
+        break;
+    case "/":
+        if (operar2 != 0)
+        {
+            Console.WriteLine($"El cociente entre {operar1} y {operar2} es: {operar1 / operar2}");
+        }
+        else
+        {
+            Console.WriteLine("No se puede dividir por 0");
+        }
+        break;
+    default:
+        Console.WriteLine("No se pudo realizar la operacion");
+        break;
 }
